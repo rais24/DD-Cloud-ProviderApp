@@ -1,10 +1,13 @@
 import { useQuery } from '@apollo/client'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { GET_SERVICE_BY_PROVIDER_ID, SEARCH_SERVICE } from '../GraphQL/Queries'
+import ShowDetailModal from './ShowDetailModal';
 
 function GetProviderService(provider_id : number, search_text: string) {
    // console.log(search_text);
+    const [toggleModal, setToggleModal] = useState(false);
+    const [serviceId, setServiceId] = useState("0");
     let apiname = SEARCH_SERVICE;
     let params;
     if(search_text === ''){
@@ -17,20 +20,26 @@ function GetProviderService(provider_id : number, search_text: string) {
     }
     var {data} = useQuery(apiname,params);
 
+    const openDetailModal = (serviceid: string) => {
+      setToggleModal(!toggleModal);
+      setServiceId(serviceid);
+    }
+
   return (
         <>
         {data && data !== undefined && data.getServiceByProviderId !== undefined && data.getServiceByProviderId.map((service :any) => {
-          let url = "/detail/"+service.serviceid;
            return(<div className="cont-part" key={service.serviceid}>
-             <Link to={url}>{service.service}</Link>
+             <button type='button' onClick={() => openDetailModal(service.serviceid)}>{service.service}</button>
              </div>)
         })}
         {data && data !== undefined && data.searchService !== undefined && data.searchService.map((service :any) => {
           let url = "/detail/"+service.serviceid;
            return(<div className="cont-part" key={service.serviceid}>
-             <Link to={url}>{service.service}</Link>
+             <Link to={url} >{service.service}</Link>
              </div>)
         })}
+
+        <ShowDetailModal showModal={toggleModal} serviceId={serviceId}/>
         </>
     
   )

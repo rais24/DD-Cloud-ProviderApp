@@ -17,15 +17,15 @@ function GetProviders(props: ProviderProps) {
     <>{data && data.getAllProviders.map((provider : any) => {
         let logohtml = <></>;
         let servicehtml = <></>;
-        if(provider.providerid == 1){
+        if(provider.providerid === "1"){
             logohtml = <><img src="aws-logo.png" alt=""/><h3>AWS</h3></>;
-            servicehtml = servicehtml1;
+             servicehtml = servicehtml1;
         }
-        else if(provider.providerid == 2){
+        else if(provider.providerid === "2"){
             logohtml = <><img src="azure.png" alt=""/><h3>AZURE</h3></>;
             servicehtml = servicehtml2;
         }
-        else if(provider.providerid == 3){
+        else if(provider.providerid === "3"){
             logohtml = <><img src="gcp.png" alt=""/><h3>GCP</h3></>;
             servicehtml = servicehtml3;
         }
