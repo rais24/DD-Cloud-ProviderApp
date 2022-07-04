@@ -10,17 +10,21 @@
 .col-container {
   display: table;
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 .col {
   display: table-cell;
   padding: 16px;
 }
-.crud-tab{margin-top:50px;}
+/*.crud-tab{margin-top:50px;}*/
 .crud-btn button{margin-left:20px;background-color:#000;}
-.jumbotron{padding:50px;}
-footer{background-color:#ccc;margin-top:20px;}
-footer h2{padding:20px;}
-.crud-tab h3{text-align: center; font-size:25px;color:#000;border-bottom:solid 1px #ccc;padding-bottom:10px;margin-bottom: 20px;}
+.jumbotron{padding:30px 50px;background-color:#fff;}
+footer{background-color:#1A1A1A;}
+footer h2{padding: 20px;
+  color: #fff;
+  margin: 0;
+  font-size: 15px;}
+.crud-tab h3{font-family: 'Open Sans', sans-serif;text-align: center; font-size:25px;color:#000;border-bottom:solid 1px #ccc;padding-bottom:10px;margin-bottom: 20px;}
 /*.crud-tab .cont-part{min-height:450px;}*/
 .crud-tab img{height:80px;}
 .service-box{
@@ -34,9 +38,19 @@ footer h2{padding:20px;}
 }
 .service-inner{display: table-cell;
   vertical-align: middle;}
-.service-box h2{text-transform: uppercase;font-size:42px;padding-bottom:20px;}
-.service-box a{color:#000;font-weight: bold; padding-top:30px;}
-
+.service-box h2{font-family: 'Open Sans', sans-serif;text-transform: uppercase;font-size:42px;padding-bottom:20px;}
+.service-box a{font-family: 'Open Sans', sans-serif;color:#000;font-weight: bold; padding-top:30px;}
+.head-bg{background: 
+  linear-gradient(
+      rgba(158, 1, 94, 0.20), 
+      rgba(158, 1, 94, 0.20)
+    ), url('../public/header-bg.jpg') no-repeat center top;background-size:cover;
+  min-height: 450px;
+  }
+  .head-bg h1{font-family: 'Open Sans', sans-serif;color:#fff;padding:80px 0 40px 0;text-transform: uppercase;font-size:45px;}
+    .jumbotron{margin-bottom: 0;}    
+  .card{background-color: rgba(255, 255, 255, 0.7);}
+  .card input{border:solid 1px #9E015E;}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
