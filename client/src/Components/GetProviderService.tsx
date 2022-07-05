@@ -33,9 +33,8 @@ function GetProviderService(provider_id : number, search_text: string) {
              </div>)
         })}
         {data && data !== undefined && data.searchService !== undefined && data.searchService.map((service :any) => {
-          let url = "/detail/"+service.serviceid;
            return(<div className="cont-part" key={service.serviceid}>
-             <Link to={url} >{service.service}</Link>
+             <button type='button' onClick={() => openDetailModal(service.serviceid)}>{service.service}</button>
              </div>)
         })}
 

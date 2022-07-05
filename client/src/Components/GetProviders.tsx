@@ -30,7 +30,7 @@ function GetProviders(props: ProviderProps) {
             servicehtml = servicehtml3;
         }
         return(
-        <div className="col-sm-4 border bg-light py-3 px-lg-5 text-center col" key={provider.providerid}>
+        <div className="col-sm-12 col-lg-4 border bg-light py-3 px-lg-5 text-center col" key={provider.providerid}>
             {logohtml}
             {servicehtml}
         </div>);

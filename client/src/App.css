@@ -1,3 +1,6 @@
+body, html{
+  overflow-x: hidden;
+}
 .App {
   text-align: center;
 }
@@ -38,19 +41,31 @@ footer h2{padding: 20px;
 }
 .service-inner{display: table-cell;
   vertical-align: middle;}
-.service-box h2{font-family: 'Open Sans', sans-serif;text-transform: uppercase;font-size:42px;padding-bottom:20px;}
-.service-box a{font-family: 'Open Sans', sans-serif;color:#000;font-weight: bold; padding-top:30px;}
-.head-bg{background: 
+  .ReactModal__Content h2{font-family: 'Open Sans', sans-serif;text-transform: uppercase;font-size:42px;padding-bottom:20px;}
+  .ReactModal__Content p{font-family: 'Open Sans', sans-serif;font-size:16px;}
+  .ReactModal__Content a{font-family: 'Open Sans', sans-serif;color:#000;font-weight: bold; padding-top:30px;}
+.head-bg{
+  /*background: 
   linear-gradient(
       rgba(158, 1, 94, 0.20), 
       rgba(158, 1, 94, 0.20)
     ), url('../public/header-bg.jpg') no-repeat center top;background-size:cover;
-  min-height: 450px;
+  min-height: 450px;*/
+  padding:50px 0;
+  background-color:#f5f5f5;
   }
-  .head-bg h1{font-family: 'Open Sans', sans-serif;color:#fff;padding:80px 0 40px 0;text-transform: uppercase;font-size:45px;}
+  .head-bg .card{width:60%;margin: 0 auto;}
+  .head-bg h1{}
     .jumbotron{margin-bottom: 0;}    
+    .jumbotron img{text-align: left;}
+    .jumbotron h1{font-family: 'Open Sans', sans-serif;color:#000;text-transform: uppercase;font-size:38px;text-align: right;}
+    .logo{text-align: left;}
   .card{background-color: rgba(255, 255, 255, 0.7);}
   .card input{border:solid 1px #9E015E;}
+  .ReactModalPortal .ReactModal__Content {width:800px;height: 600px;top:15% !important; margin: 0 auto;position: relative;text-align: center;}
+  .ReactModal__Content .close-btn{position: absolute;top:0px;right:0;}
+.pop-header{  padding:20px 0;margin-bottom:50px;;
+  background-color:#f5f5f5;}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -91,4 +106,14 @@ button {
   color: #069;
   text-decoration: underline;
   cursor: pointer;
+}
+
+
+@media (max-width:521px) {
+  .ReactModalPortal .ReactModal__Content{width:90%;height:auto;left: 5% !important;}
+  .logo{text-align: center;}
+  .jumbotron h1{text-align: center;font-size:25px;padding-top:20px;}
+  .head-bg .card{width:90%;}
+  .crud-tab .col{display: block !important;margin-bottom: 30px;}
+
 }
