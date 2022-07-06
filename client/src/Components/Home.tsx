@@ -19,7 +19,7 @@ function Home(){
       <div className="col-lg-4 logo">
     <img src="logo.png" alt="DD logo" width="150" height="50"/>
     </div>
-<div className="col-lg-8"><h1>DD-Cloud Comparision</h1></div>
+<div className="col-lg-8"><h1>DD-Cloud Comparison</h1></div>
 </div>
     </div>
     <div className="main-content">
