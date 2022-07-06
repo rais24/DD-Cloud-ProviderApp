@@ -55,7 +55,7 @@ footer h2{padding: 20px;
   background-color:#f5f5f5;
   }
   .head-bg .card{width:60%;margin: 0 auto;}
-  .head-bg h1{}
+  /* .head-bg h1{} */
     .jumbotron{margin-bottom: 0;}    
     .jumbotron img{text-align: left;}
     .jumbotron h1{font-family: 'Open Sans', sans-serif;color:#000;text-transform: uppercase;font-size:30px;font-weight:600;text-align: right;}
