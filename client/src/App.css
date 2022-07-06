@@ -58,11 +58,11 @@ footer h2{padding: 20px;
   .head-bg h1{}
     .jumbotron{margin-bottom: 0;}    
     .jumbotron img{text-align: left;}
-    .jumbotron h1{font-family: 'Open Sans', sans-serif;color:#000;text-transform: uppercase;font-size:38px;text-align: right;}
+    .jumbotron h1{font-family: 'Open Sans', sans-serif;color:#000;text-transform: uppercase;font-size:30px;font-weight:600;text-align: right;}
     .logo{text-align: left;}
   .card{background-color: rgba(255, 255, 255, 0.7);}
   .card input{border:solid 1px #9E015E;}
-  .ReactModalPortal .ReactModal__Content {width:800px;height: 600px;top:15% !important; margin: 0 auto;position: relative;text-align: center;}
+  .ReactModalPortal .ReactModal__Content {width:800px;height:500px;top:15% !important; margin: 0 auto;position: relative;text-align: center;}
   .ReactModal__Content .close-btn{position: absolute;top:0px;right:0;}
 .pop-header{  padding:20px 0;margin-bottom:50px;;
   background-color:#f5f5f5;}
