@@ -37,6 +37,10 @@ __decorate([
     (0, typeorm_1.Column)(),
     __metadata("design:type", String)
 ], ProviderServices.prototype, "service_type", void 0);
+__decorate([
+    (0, typeorm_1.Column)(),
+    __metadata("design:type", String)
+], ProviderServices.prototype, "logo", void 0);
 ProviderServices = __decorate([
     (0, typeorm_1.Entity)()
 ], ProviderServices);

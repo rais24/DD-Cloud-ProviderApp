@@ -1,6 +1,5 @@
 import { useQuery } from '@apollo/client'
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import { GET_SERVICE_BY_PROVIDER_ID, SEARCH_SERVICE } from '../GraphQL/Queries'
 import ShowDetailModal from './ShowDetailModal';
 

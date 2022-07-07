@@ -20,10 +20,10 @@ function ShowDetailModal(props: {showModal: boolean, serviceId: string}) {
     {data && data.getServiceByServiceId.map((service: any) => {
       return(
       <Modal isOpen={modalIsOpen} onRequestClose={() => setModalIsOpen(false)} ariaHideApp={false}>
-        <div className="pop-header"><img src="logo.png" width="150" height="50" alt="logo" /></div>
+        <div className="pop-header"><img src={service.logo} width="50" alt="logo" /></div>
         <h2>{service.service}</h2>
         <p>{service.description}</p>
-        <a href={service.cost} target="_blank">{service.cost}</a>
+        <a href={service.cost} target="_blank" rel="noreferrer">{service.cost}</a>
         <div className="close-btn">
           <button onClick={() => setModalIsOpen(false)}><img src="close-model.png" alt="close" /></button>
         </div>

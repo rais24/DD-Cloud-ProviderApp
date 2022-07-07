@@ -34,6 +34,7 @@ export const GET_SERVICE_BY_SERVICE_ID = gql`
             cost
             description
             service_type   
+            logo
         }
     }
 `;

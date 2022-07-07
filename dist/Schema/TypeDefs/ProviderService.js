@@ -10,6 +10,7 @@ exports.ProviderServiceType = new graphql_1.GraphQLObjectType({
         cost: { type: graphql_1.GraphQLString },
         description: { type: graphql_1.GraphQLString },
         service: { type: graphql_1.GraphQLString },
-        service_type: { type: graphql_1.GraphQLString }
+        service_type: { type: graphql_1.GraphQLString },
+        logo: { type: graphql_1.GraphQLString },
     }),
 });

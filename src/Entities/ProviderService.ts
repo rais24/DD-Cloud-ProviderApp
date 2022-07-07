@@ -21,4 +21,7 @@ export class ProviderServices extends BaseEntity{
 
     @Column()
     service_type! : string;
+
+    @Column()
+    logo! : string;
 }
